@@ -20,6 +20,42 @@ public class ConversionDeTipos {
 		boolean logicoBoolean = Boolean.parseBoolean(logicaStr);
 		System.out.println("logicaBoolean = " + logicoBoolean);
 		
+		
+		//Conversión de primitivos a enteros
+		
+		int otroNumeroInt= 100;
+		
+		System.out.println("otroNumeroInt = " + otroNumeroInt);
+		
+		String otroNumeroStr= Integer.toString(otroNumeroInt);
+		System.out.println("otroNumeroStr = " + otroNumeroStr);	
+		
+		
+		otroNumeroStr= String.valueOf(otroNumeroInt + 10);
+		System.out.println("otroNumeroStr = " + otroNumeroStr);
+		
+		Double otroRealDouble= 12.3456789e2;
+		String otroRealStr= Double.toString(otroRealDouble);
+		System.out.println("otroRealStr = " + otroRealStr);
+		
+		otroRealStr= String.valueOf(1.23456f);
+		System.out.println("otroRealStr = " + otroRealStr);
+		
+		//Conversion de primitivos a primitivos
+		
+		int i= 142767;
+		short s = (short)i;  //forzar la conversion
+		System.out.println("s = " + s);
+		long l=i;
+		System.out.println("l = " + l);
+		
+		System.out.println(Short.MAX_VALUE);
+		
+		char b= (char)i;
+		System.out.println("b = " + b);
+		
+		float f = (float) i;
+		System.out.println("f = " + f);
 	}
 
 }
