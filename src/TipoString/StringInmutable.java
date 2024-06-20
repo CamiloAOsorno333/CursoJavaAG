@@ -5,25 +5,27 @@ public class StringInmutable {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String curso= "Programación Java"; //no es un primitivo
+		String a= "a"; 
+		String b= "b"; 
+		String c= a; 
 		
-		String profesor= "Andres Guzman";
+		StringBuilder sb = new StringBuilder(a); // es mutable
 		
-		String resultado= curso.concat(profesor);
-		System.out.println("curso = " + curso);
-		System.out.println("resultado = " + resultado);
-		System.out.println(curso == resultado);
+		long inicio= System.currentTimeMillis();
 		
-		String resultado2= curso.transform(c->{
-			return c + " con " + profesor;
-		});
+		for(int i=0; i < 100000; i++) {
+			//c= c.concat(a).concat(b).concat("\n"); 	 //500 => 2ms, 
+			//c+= a + b + "\n";			 // es igual a  = c + a + b + "\n"; //500 =>16 ms
+			sb.append(a).append(b).append("\n");		 //500 => 1ms, //1000 => 0ms. // 10000 => 2ms
+		}
 		
-		System.out.println("curso = " + curso); // curso se mantiene inmutable
-		System.out.println("resultado2 = " + resultado2);
 		
-		String resultado3= resultado.replace("a", "A");
-		System.out.println("resultado = " + resultado); // no cambia nada es inmutable
-		System.out.println("resultado3 = " + resultado3);
+		long fin= System.currentTimeMillis();
+		
+		System.out.println(fin - inicio);
+		System.out.println("c = " + c);
+		System.out.println("sb = " + sb.toString());
+		
 	}
 
 }
