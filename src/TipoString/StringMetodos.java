@@ -23,6 +23,19 @@ public class StringMetodos {
         System.out.println("nombre.substring(1) = " + nombre.substring(4)); //muestra una parte del string
         System.out.println("nombre.substring(1) = " + nombre.substring(nombre.length()-1)); //muestra una parte del string
 
+        String trabalengua= "trabalenguas";
+        System.out.println("trabalengua.replace(\"a\", \".\") = " + trabalengua.replace("a", "."));
+
+        System.out.println("trabalengua = " + trabalengua);
+
+        System.out.println("trabalengua.indexOf('a') = " + trabalengua.indexOf('a')); // para saber la primera posición de un caracter
+
+        System.out.println("trabalengua.lastIndexOf('a') = " + trabalengua.lastIndexOf('a')); // la ultima ocurrencia de ese caracter
+        System.out.println("trabalengua.indexOf('z') = " + trabalengua.indexOf('z'));// como no esta retorna un -1
+        System.out.println("trabalengua.contains(\"t\") = " + trabalengua.contains("t")); // contiene si o no x mdio de un booleano
+        System.out.println("trabalengua.contains(\"t\") = " + trabalengua.contains("lenguas")); // contiene si o no x mdio de un booleano
+        System.out.println("trabalengua.contains(\"t\") = " + trabalengua.startsWith("lenguas")); // contiene si o no x mdio de un booleano
+
 
     }
 }
