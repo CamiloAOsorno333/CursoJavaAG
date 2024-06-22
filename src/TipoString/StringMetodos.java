@@ -36,6 +36,11 @@ public class StringMetodos {
         System.out.println("trabalengua.contains(\"t\") = " + trabalengua.contains("lenguas")); // contiene si o no x mdio de un booleano
         System.out.println("trabalengua.contains(\"t\") = " + trabalengua.startsWith("lenguas")); // contiene si o no x mdio de un booleano
 
+        System.out.println("trabalengua.startsWith(\"Lenguas\") = " + trabalengua.startsWith("traba")); //comienza con
 
+        System.out.println("trabalengua.endsWith(\"tr\") = " + trabalengua.endsWith("enguas")); //termina con
+
+        System.out.println("  trabalenguas " );
+        System.out.println("  trabalenguas ".trim());
     }
 }
