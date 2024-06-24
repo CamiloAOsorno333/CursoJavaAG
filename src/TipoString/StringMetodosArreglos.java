@@ -35,7 +35,7 @@ public class StringMetodosArreglos {
         }
 
         System.out.println("extension = " + archivoArr[l-1]); // como es otro string que se genera me trae el ultimo segmento
-        
+
     }
 
 
