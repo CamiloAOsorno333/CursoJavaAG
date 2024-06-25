@@ -29,5 +29,9 @@ public class OperadoresAsignacion {
         sqlString += "and c.activos";
         System.out.println("sqlString = " + sqlString);
 
+
+
+
+
     }
 }
