@@ -1,6 +1,6 @@
 package operadores;
 
-public class OperadorStanceOf {
+public class OperadorIntanceOf {
 
     public static void main(String[] args) {
 
